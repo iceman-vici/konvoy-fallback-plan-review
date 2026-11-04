@@ -1,0 +1,5 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS: 588 automatic-referral assertions (WordPress stubs + real SQLite queries).

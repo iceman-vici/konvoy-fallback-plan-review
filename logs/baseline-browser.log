@@ -1,0 +1,20 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS guest redirect preserves complete gym/campaign link
+PASS PHP login preserves query separators and gym attribution
+PASS real React checkout creates bank-transfer order
+PASS server order has selected gym and discounted price
+PASS bank screen displays immutable gym QR
+PASS real private receipt upload queues admin review
+PASS real admin authentication
+PASS real admin report states commission not configured
+PASS real bank approval fulfills browser-created order
+PASS buyer order history retains partner snapshot
+PASS approved admission QR renders in account
+PASS real WordPress poster renders both QR images in order
+PASS real WordPress admin fits mobile width
+PASS real registration preserves gym and campaign attribution
+PASS no application JavaScript errors in real WordPress journeys
+PASS: 15 real WordPress browser checks

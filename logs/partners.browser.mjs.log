@@ -1,0 +1,54 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS: 49 partner UI checks
+- Admin navigation exposes Partner Gyms
+- Commission is explicitly not configured
+- New partner starts inactive
+- Saving activation keeps explicit receiving-account ownership
+- Poster places booking QR above supplied bank QR
+- Poster uses an A4 portrait canvas without clipped content
+- Booking QR is generated locally as PNG
+- Booking QR downloads as PNG
+- Poster print window produces a PDF with the A4 stylesheet
+- Repeated poster downloads preserve the same booking QR
+- Worst-case logo, draft and maximum-length account poster fits one A4 page without clipping
+- Worst-case poster PDF contains exactly one page
+- Cancelling deletion sends no delete request
+- Report CSV comes from authorized report endpoint
+- Recipient filter is applied to server report
+- Mobile Partner Gyms view has no page-level horizontal overflow
+- Checkout shows discounted server prices
+- Changed server quote requires explicit reconfirmation
+- Price refresh never automatically recreates an order
+- Checkout sends partner code and accepted server quote
+- Partner checkout never displays a global payment account
+- Payment page shows immutable partner recipient
+- Proof screen retains gym and receiving account
+- Partner receipt submission uses existing verification flow
+- Second gym has its own checkout attribution
+- Second gym displays its own Konvoy-owned destination only
+- Current order display retains its saved QR after a gym setting changes
+- Wrong-event partner link cannot fall through to another checkout
+- Unpublished K04 never falls back to K03
+- Unbound checkout chooses available K04 over an earlier sold-out K03
+- Explicit K03 link retains its sold-out entry reminder
+- Invalid partner link blocks checkout
+- Order history shows saved gym and payment recipient
+- Pending verification shows review guidance without a payable QR
+- expired history explicitly blocks payment and hides bank QR
+- expired history retains saved receiving-account details
+- cancelled history explicitly blocks payment and hides bank QR
+- cancelled history retains saved receiving-account details
+- refunded history explicitly blocks payment and hides bank QR
+- refunded history retains saved receiving-account details
+- Unexpired pending-payment reservation shows its saved bank QR
+- Expired MySQL UTC reservation cannot show a payable bank QR
+- Verify Orders shows saved recipient before approval
+- Manual issue requires actual receiving funds evidence
+- Manual issue refreshes a changed quote and waits for explicit acceptance without auto-issuing
+- Manual gym sale sends the accepted revised quote and selected partner
+- Confirmed deletion explicitly sends confirmation and retains archived gym
+- Archived partner links cannot start new orders
+- No uncaught browser errors: 

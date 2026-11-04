@@ -1,0 +1,54 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS RFC4226 counter 0
+PASS RFC4226 counter 1
+PASS RFC4226 counter 2
+PASS RFC4226 counter 3
+PASS RFC4226 counter 4
+PASS RFC4226 counter 5
+PASS RFC4226 counter 6
+PASS RFC4226 counter 7
+PASS RFC4226 counter 8
+PASS RFC4226 counter 9
+PASS RFC6238 time 59
+PASS RFC6238 time 1111111109
+PASS RFC6238 time 1111111111
+PASS RFC6238 time 1234567890
+PASS RFC6238 time 2000000000
+PASS RFC6238 time 20000000000
+PASS reject malformed authenticator secret
+PASS reject insufficient authenticator entropy
+PASS authenticated encryption roundtrip
+PASS ciphertext has no plaintext account
+PASS reject ciphertext tampering
+PASS no plaintext secret fallback
+PASS integer centavos preserved
+PASS decimal digit input preserved
+PASS reject noninteger amount 1.2
+PASS reject noninteger amount -1
+PASS reject noninteger amount "1.0"
+PASS reject noninteger amount "1e3"
+PASS reject noninteger amount "-1"
+PASS reject noninteger amount null
+PASS reject noninteger amount []
+PASS reject noninteger amount true
+PASS explicit tier policy accepted
+PASS commercial approval required minimumCents
+PASS commercial approval required withholdingBps
+PASS commercial approval required discountPolicy
+PASS commercial approval required retentionDays
+PASS commercial approval required settlement
+PASS commercial approval required attributionWindowDays
+PASS commercial approval required correctionWindowDays
+PASS commercial approval required capBps
+PASS commercial approval required lossAllocationPolicy
+PASS commission basis points bounded
+PASS buyer discount bounded
+PASS full buyer discount cannot create unpayable receipt order
+PASS unknown commercial fields cannot silently activate
+PASS relative commercial dates cannot drift
+PASS invalid calendar date rejected
+PASS explicit date offsets normalized to UTC
+RESULT {"passed": 49, "failed": 0}

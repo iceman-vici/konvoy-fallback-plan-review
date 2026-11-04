@@ -1,0 +1,31 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS Referral code and signed link token are sent separately for server precedence
+PASS Checkout total uses the approved server referral quote
+PASS Referral creation preserves quoted total without inventing a money-receiving gym
+PASS New order payment screen never fetches current receiving settings
+PASS Buyer must save a frozen receiving option before a payable QR appears
+PASS Displayed receiving account remains the immutable order option after live settings change
+PASS Buyer account selection is persisted before proof upload
+PASS Proof form repeats the saved receiving account
+PASS Multipart proof explicitly carries the persisted receiving method
+PASS A changed referral quote blocks checkout without automatically recreating the order
+PASS Explicit revised-price acceptance submits the refreshed server quote
+PASS Fractional-peso referral totals display exact centavos without rounding
+PASS Invalid optional referral continues ordinary checkout at the undiscounted server price
+PASS Optional resolver outage preserves submitted referral intent and allows ordinary checkout
+PASS Authoritative price-change details remain reviewable while the optional quote endpoint is unavailable
+PASS Explicit acceptance of authoritative error details avoids a quote-outage retry loop
+PASS Receipt review retains saved direct account details while hiding every payable QR
+PASS History resumes the original reservation with the saved receiving option
+PASS Frozen payment selection and account details fit a mobile viewport
+PASS Admin receipt approval starts locked until actual funds are checked
+PASS A mismatched received amount cannot issue paid tickets
+PASS Receiver mismatch requires an explicit exception reason
+PASS Verification records exact bank amount, original account option, actual reference and mismatch evidence
+PASS Offsite manual issue cannot silently create a paid sale without bank verification
+PASS Manual issue submits actual funds evidence atomically with the offsite sale
+PASS No checkout/payment browser errors: 
+PASS: 26 program checkout browser checks

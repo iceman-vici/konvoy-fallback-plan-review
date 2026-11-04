@@ -1,0 +1,28 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+✔ bounded app hints match shared server fixtures and ambiguous agents stay unknown (1.804458ms)
+✔ app context cannot overwrite other referrals, rescue invalid input, or count internal visits (0.667041ms)
+✔ pending app-context retries preserve IDs and recompute hints without retaining raw agents (0.675834ms)
+✔ native Android app referrers use exact allowlisted packages and survive retry without normalization (0.405084ms)
+✔ ordinary URLs detect available platform referrers without storing paths or identifiers (0.2525ms)
+✔ automatic capture skips internal/staff navigation and invalid referrers (0.095834ms)
+✔ consented pending referral retries retain the original ID across public navigation only (0.154875ms)
+✔ links round-trip with event selection preserved, and ambiguous/untrusted input rejected (0.261708ms)
+✔ consent expires, malformed/blocked storage fails closed, and new cross-tab denial wins (0.146042ms)
+✔ same-tab visits retry the same ID, new links and expired visits get distinct IDs (0.531667ms)
+✔ checkout readiness waits for tracking but never waits indefinitely or throws (12.473667ms)
+✔ Facebook feed links require explicit placement and stay separate from Messenger (0.3215ms)
+✔ X links round-trip, preserve destination, and get independent visit IDs (0.119667ms)
+✔ youtube links round-trip and do not collide with other sources (0.095791ms)
+✔ tiktok links round-trip and do not collide with other sources (0.072708ms)
+✔ instagram links round-trip and do not collide with other sources (0.065ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.990417

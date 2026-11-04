@@ -1,0 +1,153 @@
+{
+  "recordedDate": "2026-11-04",
+  "applicationBaseCommit": "a53817a906dc6b6913aaeb651689fb4b2ac4297a",
+  "applicationChangesCommitted": false,
+  "acceptance": "OPEN",
+  "provenance": "Derived from local synthetic test logs. Hashes identify local originals; they are not independent attestation. Test source and application diff are not included in this documentation publication.",
+  "exports": [
+    {
+      "file": "logs/automatic-referrals.php.log",
+      "rawLogSha256": "e5ff29cbb0afa9859dc2f5cabb687b2d152dee039a23df14e2fe0812fa5e64b0",
+      "publishedSha256": "06a0e47139f99945129387fe9557e9c87ecb33c422664d73b6b38a2c41091b21",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/baseline-browser.log",
+      "rawLogSha256": "b1d6ecc93ab73b4cbebaf428c03c7b6953518fd99ca75402ca67e7ac93db8b4d",
+      "publishedSha256": "71a468ec7c66b18ba50bfc75c4f2d96240f4294ff40f22b51dd7c89abfe717b4",
+      "exportedResultLines": 16
+    },
+    {
+      "file": "logs/baseline-integration.log",
+      "rawLogSha256": "84fca1af3fb9573ae9c9600efb3991161ef21061f9711b175b7163fe34b6b8e3",
+      "publishedSha256": "b6f44177a66db6f752047ac05a74f87189a3090ec56dac7b7fffb0df901268d6",
+      "exportedResultLines": 62
+    },
+    {
+      "file": "logs/direct-baseline-browser.log",
+      "rawLogSha256": "d231e40d73432548fe752c59fef2eb3bd6911518723738fcbe34a2a4c6ed1e16",
+      "publishedSha256": "8d42da70b173a97058ee03715ee5397382f00abb5074de95fcf4b09c0a57381f",
+      "exportedResultLines": 9
+    },
+    {
+      "file": "logs/partners.browser.mjs.log",
+      "rawLogSha256": "75c28a54df5462e68be49929f6623184528504804d532b693bdf79eaa9f102fb",
+      "publishedSha256": "3c501d43fa8711d29a754c1fd9776b603a23cd428c5227bdc06504cf2e94284a",
+      "exportedResultLines": 50
+    },
+    {
+      "file": "logs/partners.php.log",
+      "rawLogSha256": "e545430ea660a2e8f57cbc92e98856ebce22e7d404de9742d486914fe09aa3ba",
+      "publishedSha256": "bc2df240340bcaea7079fdf665cfa3030155c521df572dfb542f7b6e99c097d0",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/php-lint.log",
+      "rawLogSha256": "2eda264192f1b17d0f833fd0242542dc05186c839ffa79db6bba65a3ae33521e",
+      "publishedSha256": "474851c3e9df266b2708071be70b8677af3f706b71a18f0f3cb5de811b1071f7",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/pricing.php.log",
+      "rawLogSha256": "5036c075e12df8c399878bb3e97b8ab8bd21a4f17eac6e865924ad45f6794f9c",
+      "publishedSha256": "df9109eaeea69f12014c3879ddcf74af0144e9d1a31224b9ee4c652d10df4afc",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/program-assets.log",
+      "rawLogSha256": "3a6d1a711d0c9a6a38539bd3202f7182430bc72bff5b849c9c2724e4f906b107",
+      "publishedSha256": "e77d31e88e9e3050638d0a2f69f704e15d781238b660d1235aec2fdc1d0e2e04",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/program-cleanup.log",
+      "rawLogSha256": "5501c78f1c280345e8dc173b19738aac1ddf32c398a6f2dc3717392fa8afe12f",
+      "publishedSha256": "21798a4f2434f7bacefc69763dc2f2bd3a1bf376562f7ad41d0a9eba17fa0d34",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/program-crypto.log",
+      "rawLogSha256": "62d1d492ecaf9441077c615170fd23082a0f12776b49d5949574fad7911b85c9",
+      "publishedSha256": "6511110b4bacf1f8253fd861680892e447822b120ffe1719607b27bd329fd825",
+      "exportedResultLines": 50
+    },
+    {
+      "file": "logs/program-integration.log",
+      "rawLogSha256": "74eacdadd16bbee132773852c4098fb8e2c83f2b41fbd74f44eb40528470cd9c",
+      "publishedSha256": "e01d7d1261cf4ec07c385bc858a274db809821104a19c196afa7b2376eb26a76",
+      "exportedResultLines": 31
+    },
+    {
+      "file": "logs/program-payments.log",
+      "rawLogSha256": "44ce398ad156f5bc03344730e01745f1c871ee5eee71a2a6681de6ff60052c21",
+      "publishedSha256": "07245860a015f0b174c38b35be99138250ed7f0e985aebe1b5b1189e5982e319",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/program-performance.log",
+      "rawLogSha256": "3e6376f648bd764e20eb74515552d3fa3e0f7f80d023bdb9c70b8bf0889e36af",
+      "publishedSha256": "a339497fe4371350feaae6c4ef575b7a2182056e7b22fd0d2196022ca2f27965",
+      "exportedResultLines": 19
+    },
+    {
+      "file": "logs/program-portal-browser.log",
+      "rawLogSha256": "de73c9c88986d555c889b94035f8432c1da8ffc50169c4a8d8545c9c168e7c0a",
+      "publishedSha256": "f8865aa083cb4c15838d09aa75887c0835db0f7fffead7cea7317e343ded022e",
+      "exportedResultLines": 30
+    },
+    {
+      "file": "logs/program-services.log",
+      "rawLogSha256": "2b18b633d9b9c37b414882b3cfaaaa0f533cb27b5f4d114ea86238318286ed10",
+      "publishedSha256": "8cc1ccff98973129447188128acec19baf6f7daec77a094f163affc07dd6263b",
+      "exportedResultLines": 185
+    },
+    {
+      "file": "logs/program.browser.mjs.log",
+      "rawLogSha256": "1fa9212b60b89e3ede40924ba1d926c6833cd8cb4eaa538565e3acfd99588df7",
+      "publishedSha256": "31190beab913efe8ad4ccdfed31c90c22bf7f3ebc779cb3cb8ecaf41b1a68a72",
+      "exportedResultLines": 82
+    },
+    {
+      "file": "logs/program.checkout.browser.mjs.log",
+      "rawLogSha256": "dbd741eb162e696cc339f98c5ebe1518521d82d3889b8ce92b72293d43bbf330",
+      "publishedSha256": "871b13c5be5cf6ba990a68bb62daebad2a1d98a12b22573b36a16234f0ce53b4",
+      "exportedResultLines": 27
+    },
+    {
+      "file": "logs/tracking.browser.mjs.log",
+      "rawLogSha256": "b49302a14ad4027d8faa510cacba5bd84e672f48a3744babbf7243bfa24ed56d",
+      "publishedSha256": "705772d1885c6a1c8e7021d3e6bb37a4bdf1c4463a138640328bd4ccdc43091e",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/tracking.php.log",
+      "rawLogSha256": "57a65423f84355fc129b5fabe153a791506f5e04bdace09025eac5f7568a8c56",
+      "publishedSha256": "b08e602d432a37fcffef91a41290f77fead3ddb422e9e6e29f56ad473b7292fe",
+      "exportedResultLines": 1
+    },
+    {
+      "file": "logs/tracking.test.mjs.log",
+      "rawLogSha256": "ef6228cac3c017e67d8549930aab1944926835dcc77d515b76dd2bd226487e03",
+      "publishedSha256": "35baeb13b6507734f0f1b5d93bb52e00aa8cc16934cf8be8b382472030d7937d",
+      "exportedResultLines": 24
+    },
+    {
+      "file": "logs/upgrade-direct-browser.log",
+      "rawLogSha256": "380002a9cb73ea99854508d84bd893ef8fdd9e9d8e3c8419b977548ded876d77",
+      "publishedSha256": "17f93a01f0fffc65ec4eeaeb692d31da0d88ceaf332ced76e88d96cf6c2bcf5e",
+      "exportedResultLines": 10
+    },
+    {
+      "file": "logs/upgrade-gym-browser.log",
+      "rawLogSha256": "b1d6ecc93ab73b4cbebaf428c03c7b6953518fd99ca75402ca67e7ac93db8b4d",
+      "publishedSha256": "71a468ec7c66b18ba50bfc75c4f2d96240f4294ff40f22b51dd7c89abfe717b4",
+      "exportedResultLines": 16
+    },
+    {
+      "file": "logs/upgrade-partners-integration.log",
+      "rawLogSha256": "2a92e7c329a2347919d39ef6cbcd0f12b76ef68f7742c1c624a4d59ba748a5b1",
+      "publishedSha256": "897935d8b1cf223c263277acde737d77db94a82e2e5c1d48e0c70901b60bf7ac",
+      "exportedResultLines": 62
+    }
+  ]
+}

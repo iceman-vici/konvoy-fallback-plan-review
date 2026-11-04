@@ -2,6 +2,8 @@
 
 **4 November 2026 — proposed scope; not approved for release or payouts**
 
+**Review evidence:** [test results and limits](EVIDENCE.md) · [all 20 acceptance gates — OPEN](ACCEPTANCE.md) · [sanitized logs](logs/README.md)
+
 ## 1. Scope and current status
 
 The fallback reuses the existing gym/direct-public booking, booking QR, reservation, receipt review and ticket-issuance flows. The proposed operational pilot covers one event and 5–10 invited partners.
@@ -85,7 +87,7 @@ All tests used disposable local environments and synthetic evidence. No real ban
 
 Bounded performance testing completed without failures, but concurrent service p95 increased from approximately 29 ms to 60 ms. It does not establish production capacity.
 
-The raw logs, screenshots and full 20-scenario mapping currently remain local. The counts above are a review summary, not a substitute for an accessible evidence package or witnessed acceptance.
+Sanitized recorded test results and the full 20-scenario mapping are now published here: [test evidence](EVIDENCE.md), [all 20 acceptance scenarios — OPEN](ACCEPTANCE.md), and [assertion/result extracts](logs/README.md). Full raw logs and screenshots remain private. This publication is not a complete reproducible source package or witnessed acceptance.
 
 ## 6. Separate decisions
 

@@ -1,0 +1,66 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS schema upgraded from social release to 1.4.0
+PASS anonymous partner management denied
+PASS real authentication qa
+PASS real authentication buyer
+PASS buyers cannot read gym accounting
+PASS KONVOY04 starts unpublished without invented capacities
+PASS draft setup is idempotent
+PASS draft excluded from public sale
+PASS incomplete release cannot publish
+PASS native publish cannot bypass release readiness
+PASS complete isolated KONVOY04 release publishes
+PASS generic event editor cannot bypass setup
+PASS pre-upgrade KONVOY03 order amount preserved
+PASS receiving account owner explicitly required
+PASS gyms receive unique stable website codes
+PASS activation requires bank QR
+PASS bank QR uploaded to immutable managed storage
+PASS active gym resolves publicly
+PASS bank QR uploaded to immutable managed storage
+PASS active gym resolves publicly
+PASS editing preserves printed ticket QR link
+PASS live server quote has 30 percent early-bird prices
+PASS base price protected from generic tier editor
+PASS missing current-price confirmation rejected
+PASS gym cannot be credited to wrong event
+PASS gym A checkout succeeds despite marketing consent denied
+PASS gym B checkout succeeds independently
+PASS recipient ownership saved separately per order
+PASS order routes to its own gym payment QR
+PASS base price and discount frozen with order
+PASS mixed Regular VIP quantities priced correctly
+PASS pending orders are not sales or zero commissions
+PASS editing gym leaves original order destination intact
+PASS previous QR bytes remain accessible after replacement
+PASS created email uses only frozen partner destination
+PASS buyer history exposes frozen gym payment information
+PASS real private proof upload queues manual verification
+PASS rejected proof earns no confirmed sale
+PASS duplicate approval rejected
+PASS two gyms issue exactly two actual tickets
+PASS gym A revenue isolated
+PASS gym B revenue isolated
+PASS recipient filter uses original ownership after gym edit
+PASS CSV matches selected gym transactions
+PASS refunded order excluded from sales but history retained
+PASS destructive action requires explicit confirmation
+PASS gym with sales archived and history preserved
+PASS archived poster blocks new orders
+PASS archiving leaves paid order snapshot readable
+PASS unused gym deletes after confirmation
+PASS last second of November21 still discounted
+PASS stale early-bird total rejected exactly November22
+PASS new order from cutoff uses normal price
+PASS approval after cutoff preserves reserved early-bird price
+PASS required financial snapshot failure rejects checkout
+PASS snapshot failure rolls back order and all reserved seats
+PASS gym attribution independent of declined social tracking
+PASS schema migration safely repeats
+PASS concurrent unpublish blocks buyer waiting on tier lock
+PASS release can reopen after concurrent test
+PASS checkout waiting across midnight re-quotes after lock
+PASS: 61 real WordPress/MariaDB partner integration checks

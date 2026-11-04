@@ -1,0 +1,35 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS anonymous quote cannot bypass authentication
+PASS buyer cannot inspect administrative partner records
+PASS ticket verifier cannot acquire finance authority
+PASS public inputs cannot self-verify funds or issue tickets
+PASS direct public booking freezes receiving options
+PASS receiving edits do not change existing direct reservation
+PASS saved direct payment QR retains its original image bytes
+PASS other buyer cannot select a receiving account for this order
+PASS receipt upload alone creates neither verified funds nor admission
+PASS failed receipt review rolls back the order and proof together
+PASS unchecked funds confirmation is refused
+PASS wrong received amount is refused
+PASS wrong received currency is refused
+PASS unknown saved receiver is refused
+PASS missing actual bank reference is refused
+PASS verified payment, proof approval and one ticket commit together
+PASS repeated manual approval cannot issue extra tickets
+PASS a completed payment cannot be cancelled as an unpaid reservation
+PASS paid notification fires once after commit and excludes buyer identity
+PASS formatted Unicode bank-reference replay is refused after bank-label edits and rolls back approval
+PASS failed offsite bank verification leaves no order or reserved seat
+PASS invalid optional code preserves direct purchasing and collection routing
+PASS raw referral intent remains durable independently of marketing consent
+PASS capacity release failure leaves the reservation and held seats intact
+PASS concurrent cancellation reports one winner and releases exactly one reservation
+PASS concurrent approval converges to one verified sale and admission
+PASS concurrent approval sends one new paid event only
+PASS verified funds bind the saved ticket-money receiver separately
+PASS optional projection final-write failure preserves core verified payment and durable retry
+PASS declined marketing consent does not prevent mandatory payment records
+PASS: 30 real HTTP upgrade checks

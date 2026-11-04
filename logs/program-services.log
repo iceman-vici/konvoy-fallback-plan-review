@@ -1,0 +1,189 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS ordinary partner and support have no finance permission
+PASS core admin and administrator label do not imply money capabilities
+PASS TOTP counter replay rejected [program_mfa_required]
+PASS operator provisioned factor confirmed by valid TOTP
+PASS wrong password fails trusted step-up [program_step_up_failed]
+PASS feature flag rejects truthy nonboolean "false" [program_flag_invalid]
+PASS feature flag rejects truthy nonboolean "true" [program_flag_invalid]
+PASS feature flag rejects truthy nonboolean 0 [program_flag_invalid]
+PASS feature flag rejects truthy nonboolean 1 [program_flag_invalid]
+PASS policy approval rejects false string [program_policy_invalid]
+PASS terms approval rejects true string [program_settings_invalid]
+PASS unknown policy fields cannot silently activate [program_settings_invalid]
+PASS rejected configuration leaves approved settings and audit state unchanged
+PASS JSON list cannot be interpreted as a settings object or change approval
+PASS text fields reject arrays rather than coercing evidence [program_text_invalid]
+PASS payout membership IDs require a JSON list of positive integers [program_batch_invalid]
+PASS membership reuses existing directory stable gym code
+PASS one-time invitation token stored only as hash
+PASS invitation bound to intended account [program_invitation_invalid]
+PASS invitation cannot be replayed [program_invitation_invalid]
+PASS accepted member without enrollment cannot promote
+PASS unapproved plan cannot activate [program_plan_unapproved]
+PASS approved rates cannot be rewritten [program_immutable_plan]
+PASS promote readiness is independent of private payout destination
+PASS approved server-owned referral resolved
+PASS best-price discount preserves cheaper early bird and discounts eligible tier
+PASS per-tier percentage and fixed ticket rates snapshotted
+PASS fixed fee above discounted revenue is rejected by approved cap without silent fee clamp or buyer price changes
+PASS historical recovery preserves fixed-fee agreement and assigns cap exception instead of clamping old credit
+PASS acquisition cap includes original early-bird reduction even when program best-price adds no discount
+PASS explicit stack policy applies program discount to existing early-bird and preserves approved commission calculation
+PASS invalid optional referral does not abort ordinary quote
+PASS cross-event code cannot claim attribution
+PASS approved typed-over-token precedence
+PASS tampered signed referral rejected
+PASS destination requires recent trusted authentication [program_step_up_required]
+PASS private destination DTO is masked
+PASS destination requires recent trusted authentication [program_step_up_required]
+PASS private destination DTO is masked
+PASS independently verified destination completes payout readiness
+PASS verified paid creates exactly one original pending credit
+PASS duplicate paid event is idempotent
+PASS payment evidence cannot be replaced on replay [program_payment_replay_conflict]
+PASS receipt review state cannot create financial credit [program_payment_unverified]
+PASS verified paid creates exactly one original pending credit
+PASS duplicate paid event is idempotent
+PASS payment evidence cannot be replaced on replay [program_payment_replay_conflict]
+PASS receipt review state cannot create financial credit [program_payment_unverified]
+PASS original event-end and wait policy releases eligible commission
+PASS authenticated partner portal DTO responds
+PASS partner sales exclude buyer and holder identities
+PASS partner cannot select another membership
+PASS batch atomically reserves every original member line
+PASS batch creation replay returns original reservation
+PASS reserved funds cannot be reserved twice [program_below_minimum]
+PASS same person cannot approve own preparation with multiple roles [program_separation_required]
+PASS approval binds exact prepared and export checksum [program_checksum_mismatch]
+PASS private export bytes bound to reviewed checksum
+PASS export alone is not paid evidence
+PASS durable per-row attempt exists before manual bank submission
+PASS confirming one bank row does not pay another
+PASS confirmed row replay cannot pay twice
+PASS unknown transfer keeps only its row reserved
+PASS unknown row cannot create a duplicate attempt
+PASS bank reference unique across rows [program_transfer_duplicate]
+PASS transfer reference case and whitespace cannot bypass row uniqueness [program_transfer_duplicate]
+PASS same-row formatted bank reference replay is idempotent
+PASS Unicode space and zero-width formatting cannot bypass transfer uniqueness [program_transfer_duplicate]
+PASS uncertain transfer cannot be released as failed [program_transfer_evidence]
+PASS definitive row failure releases only that row
+PASS later loss preserves paid history and creates recovery debt
+PASS money-only partial refund does not void admission
+PASS confirmed refund replay cannot deduct twice
+PASS overlapping refund and dispute do not double deduct
+PASS won-dispute replay preserves remaining original refund loss
+PASS partial quantity refund voids exact unused ticket and releases exact capacity
+PASS cumulative refunds cannot exceed original line [program_loss_exceeds_original]
+PASS paid attribution correction is held for independent review without moving ownership or money
+PASS unpaid correction preserves original immutable owner and appends new owner
+PASS ownership correction replay cannot duplicate new credit
+PASS ledger reconstructs balances from immutable financial journal
+PASS rebuild detects missing projection movement
+PASS rebuild repairs missing movement once from immutable source event
+PASS rebuild replay does not duplicate credits
+PASS direct order supports partial refund while preserving immutable charged lines and gross
+PASS full direct monetary refund prevents every unused scan and preserves used history
+PASS full refund releases only remaining unused capacity
+PASS full refund replay cannot release capacity twice
+PASS gym-held proceeds cannot become payout eligible without reconciliation
+PASS retained-fee reconciliation settles liability instead of making it payable twice
+PASS retained-fee settlement replay is idempotent
+PASS referrer and money receiver remain independent settlement identities [program_settlement_beneficiary_mismatch]
+PASS retained settlement requires original withholding evidence [program_settlement_amount]
+PASS retained gross equals evidenced withholding plus net
+PASS destination change invalidates approved unsent export and releases its reservation
+PASS stale approved destination cannot initiate transfer [program_batch_unapproved]
+PASS new contact cannot approve its own destination path [program_contact_recovery_required]
+PASS repeated unverified destination preserves original trusted contact and keeps its hash private
+PASS repeated changed-contact submission cannot erase independent recovery requirement [program_contact_recovery_required]
+PASS superseded destination cannot recover current contact or erase holds [program_recovery_state]
+PASS contact recovery preserves unrelated manual finance hold
+PASS independent contact recovery and destination review release readiness
+PASS refund does not release uncertain transfer and records recovery debt
+PASS approved future offset prevents repay of refunded unknown transfer amount
+PASS later higher minimum and manual-recovery enrollment do not override original payable minimum and approved future offset
+PASS resolver recovery uses purchase-time plan and rates rather than newer enrollment
+PASS historical recovery preserves actually charged buyer price
+PASS unprovable original intent becomes assigned visible exception without invented credit
+PASS separate collecting gym cannot create beneficiary payout without received remittance
+PASS incoming remittance requires real boolean funds confirmation [program_remittance_evidence]
+PASS incoming remittance must cover full original net ticket proceeds [program_remittance_amount]
+PASS verified gym remittance releases original referral beneficiary liability with identities independent
+PASS incoming remittance replay cannot create duplicate commission
+PASS one incoming bank remittance cannot settle multiple original orders [program_remittance_duplicate]
+PASS bounded ledger CSV includes accounting movements without private account data
+PASS payout CSV reports gross tax net and row results without destination secrets
+PASS support permission cannot export financial reports
+PASS persisted bounded round-robin job scanner reaches records after first hundred and cycles
+PASS explicit policy requires economic coverage allocation key [program_loss_allocation_required]
+PASS same explicit coverage prevents overlapping refund/dispute double deduction
+PASS definitive dispute loss keeps loss and releases unrelated earnings hold
+PASS different explicit economic portions add their independent losses
+PASS final loss replay cannot restore or deduct twice
+PASS won appeal restores only its original disjoint loss policy
+PASS required tax verification blocks payouts without blocking promotion or earned balances
+PASS tax requirement assessment requires finance authority [program_forbidden]
+PASS tax identifiers legal details and documents are encrypted and masked by default
+PASS partner cannot change another membership tax record
+PASS support cannot retrieve private tax identifiers or legal data
+PASS recent-MFA finance can explicitly inspect private tax details
+PASS finance tax document endpoint returns authenticated private bytes
+PASS multiple roles do not permit self-verifying a tax declaration [program_separation_required]
+PASS independently verified tax record satisfies approved readiness requirement
+PASS payout snapshot captures current independently verified tax record version
+PASS tax record version change invalidates approval even when membership and verified status remain unchanged [program_batch_stale]
+PASS tax revision preserves prior version and invalidates stale payout approval
+PASS missing explicit tax assessment blocks only payouts
+PASS finance can explicitly approve no-record-required exemption without inventing a tax rate
+PASS short accepted tax identifiers remain partially hidden in ordinary DTOs
+PASS postponed event holds original pending commission
+PASS rescheduled future event cannot pay previously eligible funds [program_event_hold]
+PASS earned eligibility advances after event while missing destination separately blocks payment
+PASS paused attribution and earnings flags preserve recorded historical balances
+PASS static asset encrypted bytes are omitted from public material DTO
+PASS authorized manager can privately review unapproved asset
+PASS unapproved static asset is private to its review authority
+PASS enrolled partner receives actual approved private static bytes
+PASS support overview excludes all destination account secrets
+PASS material approval is explicit
+PASS changed event facts remove approved promotion material and readiness
+PASS private claim receives operating owner and due time
+PASS claim is scoped to actual membership owner [program_not_found]
+PASS exit freezes policy and stops new referrals while preserving original credits
+PASS pay-after-wait exit retains earned payout readiness
+PASS exit cannot close with eligible liability outstanding [program_exit_balance_outstanding]
+PASS uncertain transfer remains reserved and blocks exit closure [program_exit_transfer_pending]
+PASS exit closure preserves paid history after settlement
+PASS hold-until-settled exit requires independent review [program_exit_settlement_pending]
+PASS later lower minimum enrollment and exit cannot waive original approved minimum [program_below_minimum]
+PASS new payment for a prior referral invalidates stale exit settlement approval
+PASS exit cannot close outstanding recovery debt [program_exit_balance_outstanding]
+PASS actual recovery receipt clears debt once without rewriting prior paid history
+PASS hold-until-settled membership closes only after review and all balances settle
+PASS late verified original booking reopens closed exit settlement with promotion still stopped
+PASS reopened hold-until-settled exit requires fresh independent approval
+PASS post-closure financial loss reopens settlement and preserves recovery debt
+PASS won-dispute restoration reopens a closed membership and preserves owed original credit
+PASS protected summary report reads authoritative core page
+PASS direct comparison separates original verified gross, full refund and unpaid receipt review
+PASS pending and terminal core orders never contribute confirmed sales; terminal orders do not inflate pending count
+PASS full-filter summary journal agrees with immutable member accounting
+PASS membership summary order dimensions follow corrected current beneficiary consistently with journal balances
+PASS comparison CSV exposes money dimensions without buyer or receiving-account identities
+PASS receiver filter reports gym receiving independently of referral beneficiary
+PASS support cannot view protected financial comparison report [program_forbidden]
+PASS report CSV neutralizes Unicode-prefixed formulas and editable numeric-looking text while preserving signed centavos
+PASS later offset-future enrollment cannot change original manual-recovery debt treatment [program_recovery_debt]
+PASS mixed-plan manual debt rejection preserves original debt and eligible entitlement
+PASS original manual debt clears only after actual incoming recovery and preserves full later commission
+PASS scheduled plan returns held portal readiness without issuing token or 503
+RESERVATION_OUTCOMES [{"success":true,"id":5545,"grossCents":16000},{"success":false,"code":"program_below_minimum","status":409}]
+PASS simultaneous synchronized WP processes produce exactly one payout reservation winner
+PASS concurrent reservations conserve liability without extra reserved or paid money
+PASS canceling sole concurrent winner restores exact original eligible balances
+RESULT {"passed": 183, "failed": 0}

@@ -1,0 +1,5 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+RESULT {"fixtureUsers": 0, "fixtureEvents": 0, "fixtureRecords": 0, "flags": {"portal": false, "attribution": false, "earnings": false, "payouts": false, "materials": false}}

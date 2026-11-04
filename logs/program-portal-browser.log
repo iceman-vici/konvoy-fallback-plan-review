@@ -1,0 +1,34 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS private invitation survives the real guest login redirect
+PASS loaded portal removes the one-use invitation token from browser address
+PASS real membership accepts only its invited authenticated account and current terms
+PASS real portal shares the stable server-owned referral link
+PASS actual partner page creates the booking QR
+PASS real partner page fits an ordinary mobile viewport
+PASS actual theme and portal content retain readable text contrast
+PASS real portal creates a private assigned missing-credit claim
+PASS actual checkout quote resolves portal referral without changing receiving routing
+PASS optional referral SQL timeout preserves purchase, original quote and Konvoy collection routing
+PASS optional stalled database lookup is bounded rather than waiting for the full database sleep
+PASS unpaid original intent survives timeout without inventing verified money or commission
+PASS partner tax submission uses actual recent password verification
+PASS real tax submission stores a separate masked record without exposing private declaration
+PASS partner cannot read Finance-only private tax details through admin route
+PASS Finance capability alone cannot reveal tax plaintext without session-bound MFA
+PASS independent Finance identity completes actual password and authenticator step-up
+PASS new referred buyer uploads a private receipt through the real checkout API
+PASS a real referred receipt earns no commission before actual-funds verification
+PASS actual referred funds verification atomically issues the booked admission
+PASS bounded recovery uses the original purchase evidence after verified payment
+PASS original referral credit reaches private partner earnings once without buyer identity
+PASS repeated referred approval cannot add another commission
+PASS authorized deliberate tax detail read returns the original encrypted declaration
+PASS private tax document HTTP response delivers exact bytes with no-store headers
+PASS independent Finance verification is a distinct audited tax transition
+PASS authenticated partner can request exit without deleting financial history
+PASS an exited partner code stops new credit while ordinary ticket quoting continues
+PASS real private portal has no application JavaScript errors
+PASS: 29 real private-portal WordPress browser checks

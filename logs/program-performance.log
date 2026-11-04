@@ -1,0 +1,23 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS pre-upgrade database and application backups exist
+PASS restoration uses a separate new database
+PASS restored application and database start at audited schema1.4
+PASS old ticket orders and admissions restored from SQL backup
+PASS restored upload file names and bytes match the fixture backup
+PASS frozen1.4 checkout workload preserves every exact amount and capacity reservation
+PASS frozen1.4 checkout workload runs four genuinely overlapping service calls
+PASS baseline workload cleans its synthetic orders and leaves restored business rows unchanged
+PASS rehearsal keeps the current financial-table migration guard
+PASS new source applies the additive1.5 migration to restored1.4 data
+PASS migration preserves every original order/ticket/gym/proof amount and status
+PASS all payment and program tables use transactional InnoDB
+PASS migration replay leaves restored business records unchanged
+PASS current1.5 checkout workload preserves every exact amount and capacity reservation
+PASS current1.5 checkout workload runs four genuinely overlapping service calls
+PASS upgraded workload cleans its synthetic orders and leaves restored business rows unchanged
+PASS upgraded SQL backup restores without losing historical business records
+COMPARISON {"concurrent": 2.067, "sequential": 0.901}
+PASS: 17 isolated migration/backup restoration and bounded performance checks

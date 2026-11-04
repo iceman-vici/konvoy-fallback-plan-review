@@ -1,0 +1,105 @@
+{
+  "passed": 17,
+  "failed": 0,
+  "restoredTables": {
+    "orders": {
+      "count": 9,
+      "sha256": "c2d59edaa1e05213b2c28a50772d1c71859809b03c3063fdc707cddf2303b8c4"
+    },
+    "tiers": {
+      "count": 3,
+      "sha256": "f02497b7f17434fe73765d015d2a309a05d45394388ea32933f6517c128172b9"
+    },
+    "tickets": {
+      "count": 5,
+      "sha256": "e7956592236b2a7709dca4704e286070d7c8a8b914646ce0452504ff520e8c89"
+    },
+    "gyms": {
+      "count": 2,
+      "sha256": "012dae33e8c154efa511363d379bb63149aab44ab48b9b39bdbf0d6b6a7a960c"
+    },
+    "gymOrders": {
+      "count": 3,
+      "sha256": "550c32b1a65e846d099d35d01a5aba21015332ce7fe0d1ee90e9b5a3145f86d8"
+    },
+    "proofs": {
+      "count": 6,
+      "sha256": "28c12eb4cecf24d2fd47ea157af66f3c362fc0de422ffb93bad2f1041c80a552"
+    }
+  },
+  "uploadFiles": 27,
+  "sourceSchema": "1.4.0",
+  "targetSchema": "1.5.0",
+  "productionTouched": false,
+  "performance": {
+    "baseline": {
+      "schema": "1.4.0",
+      "sequential": {
+        "samples": 24,
+        "meanMs": 1.707,
+        "p50Ms": 1.536,
+        "p95Ms": 2.305,
+        "maxMs": 4.99,
+        "serviceWindowMs": 40.979,
+        "serviceWindowOrdersPerSecond": 585.67,
+        "peakOverlappingCalls": 1
+      },
+      "concurrent": {
+        "samples": 32,
+        "meanMs": 7.563,
+        "p50Ms": 3.928,
+        "p95Ms": 29.135,
+        "maxMs": 31.871,
+        "serviceWindowMs": 70.538,
+        "serviceWindowOrdersPerSecond": 453.66,
+        "peakOverlappingCalls": 4,
+        "workers": 4,
+        "ordersPerWorker": 8,
+        "harnessWallSeconds": 10.356
+      },
+      "warmupsExcluded": 2,
+      "errors": 0,
+      "input": "one tier; quantity2; PHP246.90; pending bank transfer; no referral; captured local mail",
+      "timingBoundary": "OrderService::create only; excludes WP/CLI boot, HTTP/auth/rate limits and real email",
+      "capacityClaim": false
+    },
+    "upgraded": {
+      "schema": "1.5.0",
+      "sequential": {
+        "samples": 24,
+        "meanMs": 1.795,
+        "p50Ms": 1.689,
+        "p95Ms": 2.077,
+        "maxMs": 4.693,
+        "serviceWindowMs": 43.098,
+        "serviceWindowOrdersPerSecond": 556.87,
+        "peakOverlappingCalls": 1
+      },
+      "concurrent": {
+        "samples": 32,
+        "meanMs": 13.013,
+        "p50Ms": 6.067,
+        "p95Ms": 60.211,
+        "maxMs": 69.135,
+        "serviceWindowMs": 107.668,
+        "serviceWindowOrdersPerSecond": 297.21,
+        "peakOverlappingCalls": 4,
+        "workers": 4,
+        "ordersPerWorker": 8,
+        "harnessWallSeconds": 10.465
+      },
+      "warmupsExcluded": 2,
+      "errors": 0,
+      "input": "one tier; quantity2; PHP246.90; pending bank transfer; no referral; captured local mail",
+      "timingBoundary": "OrderService::create only; excludes WP/CLI boot, HTTP/auth/rate limits and real email",
+      "capacityClaim": false
+    },
+    "p95Ratio": {
+      "sequential": 0.901,
+      "concurrent": 2.067
+    },
+    "localComparisonOnly": true,
+    "productionCapacityVerified": false,
+    "primaryQaWritten": false
+  }
+}

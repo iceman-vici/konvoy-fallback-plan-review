@@ -1,0 +1,13 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS direct login preserves event without gym
+PASS direct-public order has no referring gym
+PASS direct early-bird server quote remains unchanged
+PASS direct receipt waits for verification
+PASS direct receipt alone creates no paid order
+PASS direct manual approval issues exactly one ticket
+PASS direct admission ticket appears in account
+PASS direct journey has no application errors
+PASS: 8 direct-public WordPress browser checks

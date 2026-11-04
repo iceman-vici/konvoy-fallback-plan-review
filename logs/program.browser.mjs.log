@@ -1,0 +1,86 @@
+SANITIZED RESULT EXTRACT — recorded 4 November 2026
+Synthetic local testing only. Acceptance remains OPEN.
+This is not the full raw log: container chatter, private paths and unrelated diagnostics are omitted.
+
+PASS Promotion controls stay gated before current terms acceptance
+PASS Portal never renders buyer identity fields present in a response
+PASS Revoked promotional material stays hidden
+PASS Partner home fits a 390 px mobile viewport
+PASS Portal provides readable foreground/background contrast on a white host page
+PASS Readiness explains payout hold separately from promotion
+PASS Native program checkbox stays visible under theme-style hiding rules
+PASS Copied referral link uses the exact server-provided ref link
+PASS Booking QR is generated locally as a PNG
+PASS Actual QR scan decodes to the server-issued referral booking URL
+PASS Printed booking card preserves the scanned referral QR
+PASS Partner booking card prints to a single A4 PDF page
+PASS Missing terms URL does not create a fabricated document link
+PASS Configured support email opens an email contact link
+PASS Material download uses the authenticated private asset endpoint
+PASS Missing-sale claim carries only selected membership, reference and message
+PASS Destination fields require password step-up before editing
+PASS Destination submission uses finite transfer methods and creates a verification hold
+PASS Submitted full payout account is removed from the portal after saving
+PASS Unverified tax holds payout readiness while accepted active membership can still promote
+PASS Portal tax profile renders masked values only even if raw fields appear in a response
+PASS Private tax submission sends explicit finite classification and normalized country under recent step-up
+PASS Submitted private tax plaintext disappears after the form closes
+PASS Partner exit requires deliberate acknowledgment of stopped referrals
+PASS Exiting member cannot promote through a stale referral link in a response
+PASS Exit profile explains the frozen original settlement policy
+PASS Closed membership retains readable history without exit or promotion actions
+PASS Late earned-balance reopening explains settlement review while promotion stays stopped
+PASS Portal request errors expose a retry action
+PASS Nonmembers see a useful empty state without membership actions
+PASS Invitation requires explicit current terms consent before submission
+PASS One-time invitation token is removed from the visible URL after loading
+PASS Invitation acceptance is bound to the displayed terms version
+PASS Program-only staff cannot see unrelated admin navigation
+PASS Support staff cannot see payout approval or transfer actions
+PASS Support-only staff cannot open private tax review
+PASS Payout preparers can open permitted accounting reports without finance-management tax or ledger controls
+PASS Existing Partner Gyms navigation remains available
+PASS Gym invitation uses the existing directory identity without duplicating bank account fields
+PASS Commercial plan values start blank with no invented zero or rate
+PASS Plans support explicit per-tier commission rules
+PASS Combining referral and early-bird discounts requires an explicit approved choice
+PASS Loss allocation requires an explicit approved policy with no inferred overlap default
+PASS Money action requires a separate explicit review confirmation after MFA
+PASS Finance identity check submits a trusted second factor in addition to the password
+PASS Transfer submission binds one payout item to the approved checksum
+PASS Recent trusted MFA is reused without consuming another authenticator code
+PASS Unknown transfer outcome retains its original payout item and attempt
+PASS Uncertain bank outcome remains visibly unknown
+PASS Unknown payout row cannot start another transfer attempt
+PASS Program admin fits a mobile viewport with scrollable tables and tabs
+PASS Refund form preserves explicit economic coverage without inventing a ticket void
+PASS Final lost-dispute decision requires explicit authoritative evidence
+PASS Sales review uses only the safe original rule summary and keeps raw context private
+PASS Retained-fee reconciliation exposes required withholding without raw originalContext
+PASS Taxable retained-fee reconciliation cannot submit without withholding and remittance evidence
+PASS Retained-fee reconciliation sends distinct net retention and actual tax evidence
+PASS Incoming gym remittance form does not confuse ticket proceeds with retained commission
+PASS Gym remittance requires separate confirmation of actual full incoming ticket proceeds
+PASS Changing incoming remittance evidence resets actual-funds and review confirmations
+PASS Gym remittance submits exact incoming money evidence without retained-fee fields
+PASS Admin tax lists render masked identifiers and names only
+PASS Opening private tax review requires trusted MFA before any plaintext request
+PASS Successful MFA alone does not load private tax plaintext
+PASS Explicit finance review opens only requested private tax details inside the dialog
+PASS Private tax document downloads through the authenticated finance endpoint
+PASS Closing private review clears tax plaintext from the page
+PASS Tax verification requires an explicit independent evidence action
+PASS Recovery debt cannot be reduced without separate actual incoming-funds confirmation
+PASS Received debt recovery sends finite actual-money evidence and preserves payout separation
+PASS Exit settlement approval requires a separate deliberate review confirmation
+PASS Membership closure explains outstanding balances, cases and uncertain-transfer gates
+PASS Reviewed membership closure records explicit evidence without triggering a payout
+PASS Protected ledger download uses the server CSV resource and selected membership
+PASS Report dialog clearly ends after the final bounded CSV page
+PASS Protected payout report uses the financial accounting CSV endpoint
+PASS Accounting summary uses explicit filters and distinguishes order pages from full journal balances
+PASS Summary paging retains the authoritative full-filter ledger balance without adding it twice
+PASS Protected summary CSV preserves the reviewed filters and current order page
+PASS Tax requirement assessment starts blank and requires an explicit policy decision
+PASS No uncaught program UI errors: 
+PASS: 81 program browser checks
